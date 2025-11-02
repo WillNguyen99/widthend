@@ -1,0 +1,53 @@
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+.wrapper{
+  width:933px;
+  height:800px;
+  background-color: rgb(10,10,10);
+}
+
+.column{
+  display:inline-block;
+  width:300px;
+  height:100%;
+}
+
+.column1{ background:green; }
+.column2{ background:white; }
+.column3{ background:orange; }
+
+/* 1200px and ABOVE */
+@media screen and (min-width:1200px){
+  .wrapper{
+    width:100vw;          
+  }
+  .column{
+    width:400px;         
+  }
+}
+
+
+@media screen and (min-width:900px) and (max-width:1199px){
+  .wrapper{
+    width:100%;
+  }
+  .column{
+    width:33.33%;         
+  }
+}
+
+/* 700px and BELOW */
+@media screen and (max-width:700px){
+  .wrapper{
+    width:100%;
+  }
+  .column{
+    display:block;
+    width:100%;
+    height:200px;         /* nằm dọc */
+  }
+}
